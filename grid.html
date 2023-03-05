@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+ .box{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    grid-template-rows: 110px 30px 1fr 50px;
+    grid-template-areas:
+    "header header"
+    "menu sidebar"
+    "content sidebar"
+    "footer footer"
+    ;
+ }
+ .head{
+    grid-area: header;
+    background-color: #181823;
+    color: white;
+    text-align: center;
+ }
+ .links{
+    grid-area: menu;
+    background-color: #537FE7;
+    display: flex;
+    align-items: flex-end;
+ }
+ .links a{
+text-decoration:none ;
+color: rgb(10, 0, 0);
+padding-left: 10px;
+border: 1px solid #3f74ed;
+ }
+ .c{
+    grid-area: content;
+
+ }
+ .sidebar{
+    grid-area: sidebar;
+ }
+ .footer{
+    grid-area: footer;
+    background-color: #181823;
+    color: azure;
+    text-align: center;
+ }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="head">
+        <h1>TITlE</h1>
+    </div>
+    <div class="links">
+        <a href="#">HOME</a>
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT</a>
+        <a href="#">HELP</a>
+    </div>
+    <div class="c">
+<h1> SOME HEADING</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure voluptatum fugit, mollitia praesentium dolorum accusantium. Fugit, quibusdam. Doloremque ullam voluptatem laboriosam beatae placeat nulla cumque magnam quasi dolorem soluta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita harum qui suscipit pariatur dolore aliquid consequatur. Iure repellendus, dolor magni, magnam in nam qui rerum mollitia porro, aspernatur maxime totam.</p>
+    </div>
+    <div class="sidebar">
+        <h3>SIDEBAR</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolor a illum voluptas tempore sunt voluptate consequatur temporibus perspiciatis. Maxime provident vel quas doloremque, ullam atque facilis ipsum quae aliquid.</p>
+    </div>
+    <div class="footer">
+        <h4> CLOSING NOTES</h4>
+    </div>
+</div>
+</body>
+</html>
